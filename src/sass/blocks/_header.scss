@@ -1,0 +1,65 @@
+.header {
+    position: relative;
+    height: 70px;
+    background-color: $main-color;
+    display: flex;
+    align-items: center;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 30px 685px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__info {
+        display: grid;
+        grid-template-columns: 530px 115px;
+        column-gap: 40px;
+    }
+    &__menu-items {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu-item {
+        list-style-type: none;
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+    }
+    &__phone {
+        a {
+            text-decoration: none;
+            color:white;
+            font-weight: 600;
+        }
+    }
+    &__hamburger {
+        display: none;
+        span {
+            width: 10px;
+            height: 1px;
+            background-color: white;
+        }
+    }
+}
+
+.xs-visible {
+	display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
